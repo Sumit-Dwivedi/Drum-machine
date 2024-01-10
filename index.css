@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #8D8D8D;
+}
+.section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.drum{
+    width: 38em;
+    height: calc(100vh/2.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 10px solid #FFA500;
+    background-color: #B3B3B3;
+}
+.keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:10px;
+}
+.keys div{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color:#808080;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+}
+.keys div p{
+    font-weight: bold;
+}
+.adjuster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 70px;
+    background-color: #808080;
+}
+.black-box{
+    --size:70px;
+    width:var(--size);
+    height: 30px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+.blue-box{
+    float: right;
+    width: calc(var(--size)/2.5);
+    height: 20px;
+    background-color: blue;
+    border-radius: 2px;
+}
+
