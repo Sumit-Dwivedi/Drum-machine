@@ -47,3 +47,23 @@ document.addEventListener('keypress',(e)=>{
         start(e.key.toUpperCase(),b.dataset.details);
     }
 })
+let size=screen.width;
+if(size<650){
+    const a=document.querySelector('.section');
+    a.style.display='None';
+    const b=document.querySelector('.rotater');
+    b.style.display='flex';
+    document.querySelector('body').style.backgroundColor='#fff';
+    setInterval(()=>{
+        const mobile=document.getElementById('mobile');
+        if(mobile.style.rotate=='90deg'){
+            mobile.style.rotate='0deg';
+        }else{
+            mobile.style.rotate='90deg';
+        }
+        console.log(mobile.style);
+    },1000)
+}else{
+    const a=document.querySelector('.rotater');
+    a.style.display='None';
+}
